@@ -15,7 +15,7 @@ export default [
   },
   {
     id: '3',
-    name: 'Zuck',
+    name: 'Zuckerberg Mark',
     image:
       'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/zuck.jpeg',
     bio: 'No need to send me your nudes, I already saw them',
@@ -29,9 +29,9 @@ export default [
   },
   {
     id: '5',
-    name: 'Vadim Savin',
+    name: 'George Kibe',
     image:
-      'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim1.JPG',
-    bio: 'Hola',
+      'https://i.ibb.co/MyddYHc/Watch.jpg',
+    bio: 'Just testing ',
   },
 ];
