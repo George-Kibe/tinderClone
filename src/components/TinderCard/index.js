@@ -3,7 +3,6 @@ import React from 'react'
 
 const TinderCard = (props) => {
   const {name, image, bio} = props.user;
-  console.log(name, image, bio)
   return (    
     <View style={styles.card}>
         <ImageBackground style={styles.image} 
