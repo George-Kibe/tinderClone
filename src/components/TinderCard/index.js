@@ -1,31 +1,26 @@
 import { View, Text, ImageBackground, Image, StyleSheet } from 'react-native'
 import React from 'react'
 
-const TinderCard = () => {
-  return (
-    <View style={styles.pageContainer}>
-        <View style={styles.card}>
-            <ImageBackground style={styles.image} 
-            source={{uri:"https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/elon.png"}}
-            >
-                <View style={styles.cardInner}>
-                    <Text style={styles.name}>Elon Musk</Text>
-                    <Text style={styles.bio}>A dude with a rocket looking for a lady with fuel</Text>
-                </View>
-            </ImageBackground>
-        </View>
-    </View>
+const TinderCard = (props) => {
+  const {name, image, bio} = props.user;
+  console.log(name, image, bio)
+  return (    
+    <View style={styles.card}>
+        <ImageBackground style={styles.image} 
+        source={{uri:image}}
+        >
+            <View style={styles.cardInner}>
+                <Text style={styles.name}>{name}</Text>
+                <Text style={styles.bio}>{bio}</Text>
+            </View>
+        </ImageBackground>
+    </View>    
   )
 }
 
 const styles = StyleSheet.create({
-    pageContainer:{
-        justifyContent:"center",
-        alignItems:"center",
-        flex:1
-    },
     card:{
-        width:"95%",
+        width:"90%",
         height:"70%",
         borderRadius:10,
         
