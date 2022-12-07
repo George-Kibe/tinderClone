@@ -1,8 +1,6 @@
 import { View, StyleSheet } from 'react-native'
 import React from 'react'
 import HomeScreen from './src/screens/HomeScreen'
-import users from "./src/assets/data/users"
-import TinderCard from './src/components/TinderCard'
 import "react-native-gesture-handler"
 
 const App = () => {
@@ -12,6 +10,7 @@ const App = () => {
     </View>    
   )
 }
+
 const styles = StyleSheet.create({
   pageContainer: {
     justifyContent: 'center',
